@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-font-color;
+    margin-left: 2em;
+    &:active, &:visited{
+        color:$site-theme-color;
+    }
+    &-chevron{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: $text-font-color;
+    }
+    @media (max-width: 480px){
+        display: none;
+    }
+}

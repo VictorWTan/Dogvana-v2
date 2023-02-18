@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.logo {
+    &:active, &:visited, &:hover, &:link{
+        color: $site-theme-color;
+    }
+    font-family: $logo-font;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    padding: .375em;
+    @media(min-width: 1024px) {
+        margin-left: 2em;
+    }
+}
+
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    &-icons{
+        display: flex;
+        margin-right: .5em;
+        @media(min-width: 1024px){
+            display: none;
+        }
+    }
+}
+
+.favorite-button{
+    color: $site-theme-color;
+    justify-content: center;
+    align-self: center;
+    margin-right: .25em;
+}
+
+.hamburger-menu{
+    color: $site-theme-color;
+    justify-content: center;
+    align-self: center;
+}
+
+.left-navbar-container{
+    display: flex;
+}

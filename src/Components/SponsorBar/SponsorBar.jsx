@@ -14,8 +14,8 @@ export default function SponsorBar() {
   return (
     <>
       <div className="sponsor-banner">
-        <div className="logo">
-          <span className="logo-text">POWERED BY</span>
+        <div className="sponsor-banner-logo">
+          <span className="sponsor-banner-logo-text">POWERED BY</span>
           <img
             className="purina-logo"
             src={require("../../Assets/purina.png")}
@@ -30,6 +30,7 @@ export default function SponsorBar() {
         </div>
         <svg
           onClick={handleDropdown}
+          id="sponsor-chevron"
           className={!dropdown ? "bannerHidden" : "bannerOpen"}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
