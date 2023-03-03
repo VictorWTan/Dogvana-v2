@@ -8,7 +8,7 @@ import Dropdowns from "../Dropdowns/Dropdowns";
 
 export default function Navbar() {
   return (
-    <navbar className="mobile-navbar">
+    <nav className="mobile-navbar">
       <div className="left-navbar-container">
         <Link to="/" className="logo">
           poodlefinder
@@ -23,6 +23,6 @@ export default function Navbar() {
         />
         <MenuRoundedIcon className="hamburger-menu" sx={{ fontSize: 35 }} />
       </div>
-    </navbar>
+    </nav>
   );
 }

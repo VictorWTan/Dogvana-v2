@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.search-bar, .location-search-bar{
+    width: 100%;
+    border: 1px solid #fff;
+    box-shadow: inset 0 -3px #fff;
+    color: #747574;
+    height: 1.625em;
+    border-radius: 3px;
+    font-family: $main-font;
+    font-size: 1em;
+    margin-top: 2em;
+    padding: 12px;
+    @media(min-width: 1024px){
+        width: 374px;
+    }
+    &-container{
+        display: flex;
+        justify-content: center;
+        width: 92.5%;
+        p{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+}
+
+.location-search-bar, .location-search-bar p{
+    @media(max-width: 480px){
+        display: none;
+    }
+}

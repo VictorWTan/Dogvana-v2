@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+.background-container{
+    display: flex;
+    justify-content: center;
+    background-image: url('../../Assets/dogvanacover.png');
+    background-size: cover;
+    height: 166px;
+    @media (min-width: 1024px){
+        height: 488px;
+    }
+}
+
+
