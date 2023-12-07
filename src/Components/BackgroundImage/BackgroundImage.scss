@@ -2,11 +2,13 @@
 
 .background-container{
     display: flex;
-    justify-content: center;
-    background-image: url('../../Assets/dogvanacover.png');
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../../Assets/dogvanacover.png');
     background-size: cover;
-    height: 166px;
+    height: 220px;
     @media (min-width: 1024px){
+        background-image: url('../../Assets/dogvanacover.png');
         height: 488px;
     }
 }

@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.pet-card{
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #d2d1d3;
+    box-shadow: 0 4px 4px rgba(0,0,0,.05);
+    box-sizing: border-box;
+    &-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color:$navbar-color;
+        border-top: solid 3em $site-theme-color;
+    }
+}
+
+#card{
+    &-dog{
+       width: auto;
+       height: auto;
+    }
+}
