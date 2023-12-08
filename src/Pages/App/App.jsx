@@ -3,6 +3,7 @@ import '../App/App.scss';
 import Navbar from '../../Components/Navbar/Navbar';
 import BackgroundImage from '../../Components/BackgroundImage/BackgroundImage';
 import PetCardButtons from '../../Components/PetCardButtons/PetCardButtons';
+import PurpleBanner from '../../Components/PurpleBanner/PurpleBanner';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <SponsorBar/>
       <Navbar/>
       <BackgroundImage/>
+      <PurpleBanner/>
       <PetCardButtons/>
     </div>
   );

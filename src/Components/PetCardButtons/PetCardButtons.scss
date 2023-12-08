@@ -3,22 +3,56 @@
 .pet-card{
     border-radius: 10px;
     background-color: white;
-    margin: 1em;
     border: 1px solid #d2d1d3;
     box-shadow: 0 4px 4px rgba(0,0,0,.05);
     box-sizing: border-box;
+    font-family: $main-font;
+    font-size: 1em;
+    margin: 1em;
+    @media (min-width: 1024px) {
+        width: 200px;
+        margin: none;
+    }
+    &:hover {
+        background-color: #d2d1d3;
+        border: 2px solid $site-theme-color;
+    }
+    & svg{
+        padding: 1em 1em 0em 1em;
+    }
+    & span{
+        display: flex;
+        justify-content: center;
+        margin: none;
+    }
     &-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        background-color:$navbar-color;
-        border-top: solid 3em $site-theme-color;
+        background-color: none;
+        position: absolute;
+        width: 100vw;
+        top: -30px;
+
+        &-wrapper{
+            position: relative;
+        }
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            top: -120px;
+        }
     }
 }
 
-#card{
-    &-dog{
-       width: auto;
-       height: auto;
+.available-adoptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $navbar-color;
+    height: 500px;
+    & span {
+        margin-top: 20em;
     }
 }
